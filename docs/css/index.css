@@ -48,10 +48,12 @@ form>label {
 
 .required-label {
   display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 1em;
   color: white;
   background-color: crimson;
-  font-size: 3px;
+  font-size: 5px;
   padding: 2px 5px;
   font-weight: bold;
 }
