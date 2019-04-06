@@ -1,3 +1,7 @@
+/**
+ * お問い合わせフォームをSubmitする.
+ *
+ */
 var submitForm = function () {
   document.getElementById('googleForm').submit();
 
@@ -10,8 +14,7 @@ var submitForm = function () {
   document.getElementById('email-required-error').style.display = 'none';
   document.getElementById('content-required-error').style.display = 'none';
 
-  // おしゃれに要修正
-  alert('お問い合わせが完了しました。')
+  toastr.success('お問い合わせが完了しました。');
 }
 
 document.getElementById('submit_button').addEventListener('click', function () {
@@ -19,11 +22,9 @@ document.getElementById('submit_button').addEventListener('click', function () {
   email = document.getElementById('email').value;
   tel = document.getElementById('tel').value;
   content = document.getElementById('content').value;
-
   if (name && email && content) {
     submitForm();
   }
-
   if (!name) {
     document.getElementById('name-required-error').style.display = 'inline';
   }
