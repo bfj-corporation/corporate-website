@@ -14,7 +14,7 @@ var submitForm = function () {
   document.getElementById('email-required-error').style.display = 'none';
   document.getElementById('content-required-error').style.display = 'none';
 
-  toastr.success('お問い合わせが完了しました。');
+  toastr.success('お問い合わせ完了');
 }
 
 document.getElementById('submit_button').addEventListener('click', function () {
