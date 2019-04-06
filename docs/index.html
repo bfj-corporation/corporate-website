@@ -1,10 +1,281 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html class="no-js" lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>bfj株式会社</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>bfj株式会社</title>
+    <meta name="description" content="bfj株式会社 - コーポレートサイト">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
 </head>
-<body>
-  <div id="app">bfj株式会社</div>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="./images/logo.png" alt="Homepage">
+            </a>
+        </div> <!-- end header-logo -->
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <div class="header-nav__content">
+                <h3>bfj Corporation</h3>
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+                </ul>
+                <ul class="header-nav__social">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/manabu.inagaki"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/mockmanabu"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <!-- <li>
+                        <a target="_blank" href="#0"><i class="fab fa-instagram"></i></a>
+                    </li> -->
+                </ul>
+            </div> <!-- end header-nav__content -->
+        </nav> <!-- end header-nav -->
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main">
+                <h1>
+                    We are <br>
+                    BFJ Corporation.
+                </h1>
+                <p>
+                    We have a lot of influence. <br>
+                    Because the face is big.
+                </p>
+            </div> <!-- end home-content__main -->
+        </div> <!-- end home-content -->
+        <ul class="home-sidelinks">
+            <li><a class="smoothscroll" href="#contact">Contact<span>お仕事のご依頼</span></a></li>
+        </ul> <!-- end home-sidelinks -->
+        <ul class="home-social">
+            <li class="home-social-title">Follow Me</li>
+            <li><a target="_blank" href="https://www.facebook.com/manabu.inagaki">
+                    <i class="fab fa-facebook"></i>
+                    <span class="home-social-text">Facebook</span>
+                </a></li>
+            <li><a target="_blank" href="https://twitter.com/mockmanabu">
+                    <i class="fab fa-twitter"></i>
+                    <span class="home-social-text">Twitter</span>
+                </a></li>
+            <!-- <li><a target="_blank" href="#0">
+                    <span class="home-social-text">Instagram</span>
+                </a></li> -->
+        </ul> <!-- end home-social -->
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__icon"></span>
+        </a> <!-- end home-scroll -->
+    </section> <!-- end s-home -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-about light-gray">
+
+        <!-- お問い合わせフォーム -->
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" id="google_form">
+                <h3 class="subhead subhead--light">Contact</h3>
+                <!-- <h1 class="display-1">お仕事のご依頼はこちらから.</h1> -->
+                <!-- <h1 class="display-1 display-1--light">Get in touch and let's make something great together. Let's turn
+                    your idea on an even greater product.</h1> -->
+                <form id="googleForm"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdrC1QKchQsG1oYLghhjITfl8M7t6QKPEGMDuo4__xXTyU3aQ/formResponse"
+                    target="dummyIframe" method="POST" id="mG61Hd">
+                    <!-- お名前 -->
+                    <label for="name">name</label><span class="required-label">必須</span>
+                    <span id="name-required-error" class="required-error">入力してください。</span>
+                    <input id="name" name="entry.470714304" type="text" required="required" class="form-input g_form"
+                        placeholder="名前　太郎">
+                    <!-- メールアドレス -->
+                    <label for="">email</label><span class="required-label">必須</span>
+                    <span id="email-required-error" class="required-error">入力してください。</span>
+                    <input id="email" name="entry.1558582620" type="email" required="required" class="form-input g_form"
+                        placeholder="email">
+                    <!-- 電話番号 -->
+                    <label for="">tel</label>
+                    <input id="tel" name="entry.2142016383" type="tel" class="form-input g_form"
+                        placeholder="012-3456-7890">
+                    <!-- お問い合わせ -->
+                    <label for="content">content</label><span class="required-label">必須</span>
+                    <span id="content-required-error" class="required-error">入力してください。</span>
+                    <textarea id="content" name="entry.288713975" required class="form-textarea g_form_text"
+                        placeholder="例: 新作アプリのプロモーション企画を依頼したいです。"></textarea>
+                    <input id="submit_button" type="button" class="btbt" value="送信" />
+                </form>
+                <iframe name="dummyIframe" style="display:none;"></iframe>
+                <div id="thxMessage" style="display:none;">お問い合わせありがとうございました。</div>
+            </div>
+        </div>
+        <!-- ./お問い合わせフォーム -->
+
+        <div class="row">
+            <!-- CEO -->
+            <div class="col-four tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">CEO</h3>
+                <div class="face-image"><img src="./images/manabu.png" alt=""></div>
+                <div class="contact-information">
+                    <span class="contact-information__list">稲垣　学</span>
+                    <a class="contact-information__list" href="mailto:#0"><i class="far fa-envelope"></i>
+                        manabu@bf-j.com</a>
+                    <a class="contact-information__list" href="tel:08035519731"><i class=" fas fa-phone"></i>
+                        080-3551-9731</a>
+                </div>
+            </div>
+            <!-- ./CEO -->
+            <!-- FOLLOW ME -->
+            <div class="col-four tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Follow Me</h3>
+                <ul class="contact-social">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/manabu.inagaki">
+                            <!-- Facebook -->
+                            <img class="sns-icons" src="./images/sns/f-ogo_RGB_HEX-58.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/mockmanabu">
+                            <!-- Twitter -->
+                            <img class="sns-icons" src="./images/sns/Twitter_Social_Icon_Rounded_Square_Color.png"
+                                alt="">
+                        </a>
+                    </li>
+                    <!-- Instagram -->
+                    <!-- <li>
+                        <a target="_blank" href="#0">
+                            <img class="sns-icons" src="./images/sns/glyph-logo_May2016.png" alt="">
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- ./FOLLOW ME -->
+            <!-- ADDRESS -->
+            <div class="col-four tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">ADDRESS</h3>
+                <p>
+                    〒 150-0013<br>
+                    東京都渋谷区恵比寿1-7-8<br>
+                    エトワール恵比寿三葉901
+                </p>
+            </div>
+            <!-- ./ADDRESS -->
+        </div> <!-- end row -->
+
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-full cl-copyright">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="fa fa-heart"
+                        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </section> <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end photoSwipe background -->
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/googleForm.js"></script>
+
 </body>
+
 </html>

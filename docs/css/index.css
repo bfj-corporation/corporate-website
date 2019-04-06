@@ -1,0 +1,79 @@
+ul {
+  list-style: none;
+}
+
+.sns-icons {
+  max-height: 50px;
+}
+
+.cl-go-top {
+  bottom: 7.2rem;
+}
+
+.face-image {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.face-image>img {
+  border-radius: 50%;
+}
+
+.contact-information {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.contact-information__list {
+  display: block;
+}
+
+.copyright {
+  padding-top: 100px;
+  font-size: 2px;
+  text-align: center;
+}
+
+
+/* inquiry */
+form {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 5% 5% 0 5%;
+}
+
+form>label {
+  display: inline;
+}
+
+.required-label {
+  display: inline;
+  margin-left: 1em;
+  color: white;
+  background-color: crimson;
+  font-size: 3px;
+  padding: 2px 5px;
+  font-weight: bold;
+}
+
+.required-error {
+  display: none;
+  color: red;
+  font-weight: bold;
+  font-size: x-small;
+}
+
+.form-input,
+.form-textarea {
+  background-color: ghostwhite !important;
+  width: 100%;
+}
+
+#submit_button {
+  background-color: #26bfb5;
+  border-color: #26bfb5;
+  /* background-color: #cc147f;
+  border-color: #cc147f; */
+  color: white;
+  width: 100%;
+}
